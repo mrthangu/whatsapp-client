@@ -10,10 +10,11 @@ export const AccountProvider = ({ children }) => {
 
  
 
-  const socket = useRef();
-  useEffect(() => {
-    socket.current = io("wss://whatsapp-socket.mrzera.xyz");
-  }, []);
+ const socket = useRef();
+useEffect(() => {
+  socket.current = io("wss://whatsapp-socket.mrzera.xyz");
+}, []);
+
 
   return (
     <AccountContext.Provider
