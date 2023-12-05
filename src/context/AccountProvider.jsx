@@ -12,7 +12,7 @@ export const AccountProvider = ({ children }) => {
 
  const socket = useRef();
 useEffect(() => {
-  socket.current = io("https://127.0.0.1:1000;");
+  socket.current = io("wss://whatsapp-socket.mrzera.xyz");
 }, []);
 
 
