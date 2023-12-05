@@ -12,7 +12,7 @@ export const AccountProvider = ({ children }) => {
 
  const socket = useRef();
 useEffect(() => {
-  socket.current = io("https://whatsapp-socket.mrzera.xyz");
+  socket.current = io("whatsapp-socket.mrzera.xyz:1000");
 }, []);
 
 
