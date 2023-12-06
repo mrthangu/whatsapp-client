@@ -12,7 +12,7 @@ export const AccountProvider = ({ children }) => {
 
  const socket = useRef();
 useEffect(() => {
-  socket.current = io("https://whatsapp-socket-9fba.onrender.com");
+  socket.current = io("https:whatsapp-socket-9fba.onrender.com");
 }, []);
 
 
