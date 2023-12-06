@@ -12,7 +12,11 @@ export const AccountProvider = ({ children }) => {
 
  const socket = useRef();
 useEffect(() => {
-  socket.current = io("wss://whatsapp-socket.mrzera.xyz");
+  socket.current = io("wss://whatsapp-socket.mrzera.xyz",{
+  headers:{
+    "user-agent":"google-chrome"
+  }
+  });
 }, []);
 
 
