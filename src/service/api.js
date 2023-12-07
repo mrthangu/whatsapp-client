@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://whatsapp-server.mrzera.xyz";
+const url = "https://whatsapp-server-f84j.onrender.com";
 
 export const addUser = async (data) => {
   try {
